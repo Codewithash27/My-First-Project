@@ -1,26 +1,35 @@
-# 🐍 My First Python Project
+# 📐 Factorial Calculator in Python
 
-Welcome to **My-First-Project**, a beginner-friendly Python repository built as part of my learning journey. This project covers foundational programming concepts through fun and practical code examples.
-
----
-
-## 🧠 What You'll Learn
-
-- ✅ Basic syntax and structure of Python
-- 🔁 Loops and conditionals
-- 📦 Functions and modular programming
-- 📄 File handling
-- 📊 Simple terminal-based interactions
+This is a basic Python program that calculates the **factorial** of a given number using recursion.
 
 ---
 
-## 🚀 Technologies Used
+## 🚀 What It Does
 
-- **Language:** Python 3.x
-- **IDE:** VS Code / PyCharm (or your favorite)
-- **Libraries:** Only standard Python libraries
+- Takes user input
+- Calculates factorial recursively
+- Prints the result in a formatted string
 
 ---
 
-## 📁 Project Structure
+## 🧠 Key Concepts Used
 
+- Recursion
+- Conditional statements
+- User input
+- Type conversion
+
+---
+
+## 💻 Code Preview
+
+```python
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+# Example usage:
+num = int(input("Enter a number: "))
+print(f"The factorial of {num} is {factorial(num)}")
